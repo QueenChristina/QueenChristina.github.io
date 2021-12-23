@@ -1,7 +1,12 @@
+@font-face {
+    font-family: Stanberry;
+    src: url(Stanberry.tff);
+  }
+
 body {
     margin: 0;
 
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Stanberry;
 }
 
 .splitContainter {
@@ -44,10 +49,14 @@ body {
 }
 
 .hDivider {
-    width:100%;
-    height:2px;
-    border-width: 0px;
-    color:gray;
+    width:300px;
+    /* height:3px; */
+    border: 3px solid #F0E7D6;
+    border-radius:3px;
+    margin-right: 0px;
+    /* border-width: 0px !important; */
+    /* color:#F0E7D6;
+    background-color: #F0E7D6; */
 }
 
 .menuButtons {
@@ -57,6 +66,7 @@ body {
     flex-direction: column;
 
     gap: 10px;
+    margin-top: 20px;
 }
 
 button {
@@ -66,6 +76,7 @@ button {
 
     border-radius: 20px;
     background-color:#F0E7D6;
+    font-family: Stanberry;
     color:#2d3520;
     border-width:0px;
     border-bottom-width: 4px;
@@ -103,8 +114,62 @@ button {
     /* display: flex; */
     background-color: #F0E7D6;
     color: #9BAB80;
+
+    overflow-y:scroll;
+}
+
+.imgContainer {
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+    height: 100%;
+}
+
+.imgCol {
+    display: flex;
+    flex-direction: column;
+}
+
+.imgThumb {
+    max-width: 100%;
 }
 
 /* :nth-child(even) {
     background-color: #97b1ff;
 } */
+
+img {
+    margin: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    .splitContainter {
+        flex-direction: column;
+    }
+    .menuButtons {
+        flex-direction: row;
+        width: 100%;
+        margin: 5px;
+    }
+    button {
+        font-size: 18px;
+        padding: 5px;
+        text-align: center;
+    }
+    .menuButton {
+        flex-grow: 1;
+    }
+    .hDivider {
+        margin-right: auto;
+    }
+    .name {
+        font-size: 24px;
+        margin-bottom: 0px;
+        align-self: center;
+    }
+    .socialButtons {
+        display: none;
+    }
+}
+
