@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+}
+
+.splitContainter {
+    /* To display menu and portfolio in row as parent container */
+    display: flex;
+    flex-direction: row;
+
+    /* Expand container to whole page */
+    width: 100%;
+    height: 100%;
+    /* To make height take up whole screen */
+    position: fixed;
+    z-index: 1;
+}
+
+/* Left side of screen */
+.menu {
+    /* Property as child of flex containter */
+    flex-grow: 1;
+    background-color: #4a536d;
+
+    /* Align menu items to the left, and vertically justify to center */
+    align-items: flex-end; 
+    justify-content: center;
+
+    /* Other formatting */
+    padding-right: 5%;
+    padding-left: 5%;
+
+    /* Prpoperty as parent flex of name and button container*/
+    display: flex;
+    flex-direction: column;
+}
+
+.menuButtons {
+    /* Prpoperty as parent flex of buttons */
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.menuButton {
+    text-align: right;
+}
+
+.socialButtons {
+    display: flex;
+    padding: 10px;
+    /* width: 200px; */
+    /* justify-content: space-between; */
+    gap: 10px;
+    flex-direction: row;
+}
+
+/* Right side of screen */
+.portfolio {
+    flex-grow: 3;
+
+    padding: 50px;
+
+    /* display: flex; */
+    background-color: #97b1ff;
+}
+
+/* :nth-child(even) {
+    background-color: #97b1ff;
+} */
