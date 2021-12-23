@@ -59,6 +59,20 @@ body {
     background-color: #F0E7D6; */
 }
 
+.hDividerBrown {
+    width:300px;
+    border: 3px solid #606338;
+    border-radius:3px;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+footer {
+    background-color: #9BAB80;
+    min-height: 80px;
+}
+
 .menuButtons {
     /* Prpoperty as parent flex of buttons */
     display: flex;
