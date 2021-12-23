@@ -96,7 +96,7 @@ button {
     margin-top:4px;
 }
 
-.socialButtons {
+.rowContainer {
     display: flex;
     padding: 40px 10px 20px;
     /* width: 200px; */
@@ -139,8 +139,32 @@ button {
     background-color: #97b1ff;
 } */
 
+.center {
+    display: block;
+    margin: auto;
+}
+
 img {
-    margin: 10px;
+    margin: 20px;
+}
+
+video {
+    margin: 20px;
+    /* max-width: 100%; */
+}
+
+p {
+    font-size: 18px;
+    color:#1e2413;
+}
+
+@media only screen and (max-width: 1240px) {
+    .name {
+        font-size: 32px;
+    }
+    .hDivider {
+        width: 200px;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -151,6 +175,9 @@ img {
         flex-direction: row;
         width: 100%;
         margin: 5px;
+    }
+    .imgContainer, #gameContainer {
+        flex-direction: column;
     }
     button {
         font-size: 18px;
@@ -168,8 +195,11 @@ img {
         margin-bottom: 0px;
         align-self: center;
     }
-    .socialButtons {
+    #socialButtons {
         display: none;
+    }
+    .portfolio {
+        padding: 20px;
     }
 }
 

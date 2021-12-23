@@ -9,45 +9,92 @@
     <script src="script.js" async defer></script>
   </head>
   <body>
-    <!-- <h1> Qin Tina </h1>
-    <div class='empty'>
-    </div>
-    <div class= 'basic' >
-      <p> <b>Welcome to my personal website.</b></p>
-          <button type="button" class="button" onclick="location.href='More.html'"> See All </button>
-    </div>
-    <div class="footer">
-      <p>All Rights Reserved © QinTina</p>
-    </div> -->
     <div class = 'splitContainter'>
       <div class = 'menu'>
             <h1 class = 'name'>Christina Qin</h1>
             <hr class = 'hDivider'>
 
             <div class = 'menuButtons'>
-              <button class = 'menuButton'>art</button>
-              <button class = 'menuButton'>animation</button>
-              <button class = 'menuButton'>tools/games</button>
+              <button class = 'menuButton' onclick="show('art')">art</button>
+              <button class = 'menuButton' onclick="show('animation')">animation</button>
+              <button class = 'menuButton' onclick="show('games/tools')">games/tools</button>
             </div>
 
-            <div class = 'socialButtons'>
-              <button>icon</button>
+            <div class = 'rowContainer' id='socialButtons'>
               <button>icon</button>
             </div>
       </div>
 
-      <div class = 'portfolio'>
-        <h1> Content </h1>
+      <div class = 'portfolio' id='content'>
 
-        <div class = 'imgContainer'>
-          <div class = 'imgCol'>
-            <img class='imgThumb' src='assets/hopeDreams.png'>
-            <img class='imgThumb' src='assets/hopeDreams.png'>
+        <!-- Art page -->
+        <div id = 'art' >
+        <h1> Artwork </h1>
+          <div id = 'art' class = 'imgContainer'>
+            <div class = 'imgCol'>
+              <img class='imgThumb' src='assets/hopeDreams.png'>
+              <img class='imgThumb' src='assets/deerMe.jpg'>
+              <img class='imgThumb' src='assets/memories.jpg'>
+              <img class='imgThumb' src='assets/teleTubbies.jpg'>
+            </div>
+            <div class = 'imgCol'>
+              <img class='imgThumb' src='assets/adachuk_qintina.png'>
+              <img class='imgThumb' src='assets/acrossStyx.jpg'>
+              <img class='imgThumb' src='assets/bigFish.png'>
+              <img class='imgThumb' src='assets/hopeBirdLight.png' id='Hope is the Little Bird that Keeps the Nightmares Away'>
+              <img class='imgThumb' src='assets/bannerInnovate.png'>
+            </div>
           </div>
-          <div class = 'imgCol'>
-            <img class='imgThumb' src='assets/hopeDreams.png'>
+      </div> 
+
+      <div id = 'animation'>
+        <h1>Animation and Storytelling</h1>
+        <div class = 'imgCol'>
+          <img class='imgThumb' src='anim/WarmerWithFriends.png'>
+          <video src="anim/Dreams MV.mp4" controls></video>
+          <video src="anim/Afraid Im Not the Deer I Want to Be.mp4" controls></video>
+          <video src="anim/fallingAsleep.mp4" controls loop></video>
+          <video src="anim/Blinded by a Thousand Cranes.mp4" controls loop></video>
+          <img class='imgThumb' src='anim/TrenchcoatPenguinComic.png'>
+        </div>
+      </div>
+
+      <!-- Games and Tools page -->
+        <div id = 'games/tools'>
+          <h1>Games and Tools</h1>
+          <!-- https://github.com/QueenChristina/gd_dialog -->
+          <h2> Open Source Dialogue System </h2>
+          <p> Robust dialogue system for game developers of Godot, suitable for RPGs, visual novels, interactive fiction, and more.
+            <br>
+            Featured in the unofficial Godot weekly newsletter <a href='https://godotes.com/issues/sonic-vimjam/'>Godot Notes</a>,
+              in the JRPG-inspired RPG <a href='https://albertkun.github.io/worldex/builds/alpha_v2/'>"World Dex"</a> by Albert Kun, and the
+              humorous (yet beautifully annoying) interactive fiction game <a href='https://dmitt.itch.io/a-knights-errand'>"A Knight's Errand"</a> by dMitt.
+          </p>
+          <a href='https://github.com/QueenChristina/gd_dialog'>
+            <img class='imgThumb' src='games/TweetyTalks.gif' style="max-width:100%;display: block;margin: auto;border: double 4px red;">
+          </a>
+          <h2> Games </h2>
+          <p>Made with Godot and Pygame.</p>
+          <div class='imgCol' style='width:100%;'>
+          </div>
+          <a href='https://qintin.itch.io/calculus-zombies'>
+            <img src='games/cover2.png' style='display: block;margin: auto;max-width:100%;max-height:300px;'>
+          </a>
+          <!-- <h3>Calculus Zombies</h3> -->
+        </div>
+          <div class='rowContainer center' id='gameContainer'>
+            <a href='https://github.com/QueenChristina/cat-addiction'>
+              <img src='games/CatAddiction1.gif' style='max-width:100%;max-height:300px'>
+            </a>
+            <!-- <h3 style='display: inline-block;'>Cat Addiction</h3> -->
+            <a href='https://github.com/QueenChristina/Neverending-Dream-RPG-in-Python'>
+              <img src='games/GamePreview1.gif' style='max-width:90%;max-height:300px'>
+            </a>
+            <!-- <h3 style='display: inline-block;'>Neverending Dream</h3> -->
           </div>
         </div>
+        </div>
+
       </div>
 
     </div>
