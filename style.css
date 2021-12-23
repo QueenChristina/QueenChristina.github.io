@@ -113,7 +113,8 @@ button {
 
     /* display: flex; */
     background-color: #F0E7D6;
-    color: #9BAB80;
+    /* color: #9BAB80; */
+    color:#2d3520;
 
     overflow-y:scroll;
 }
