@@ -1,5 +1,7 @@
 body {
     margin: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .splitContainter {
@@ -19,35 +21,73 @@ body {
 .menu {
     /* Property as child of flex containter */
     flex-grow: 1;
-    background-color: #4a536d;
+    background-color: #9BAB80;
 
     /* Align menu items to the left, and vertically justify to center */
     align-items: flex-end; 
     justify-content: center;
 
     /* Other formatting */
-    padding-right: 5%;
+    padding-right: 4%;
     padding-left: 5%;
+
+    color: #F0E7D6;
 
     /* Prpoperty as parent flex of name and button container*/
     display: flex;
     flex-direction: column;
 }
 
+.name {
+    margin-bottom: 5px;
+    font-size: 42px;
+}
+
+.hDivider {
+    width:100%;
+    height:2px;
+    border-width: 0px;
+    color:gray;
+}
+
 .menuButtons {
     /* Prpoperty as parent flex of buttons */
     display: flex;
-    width: 100%;
+    /* width: 70%; */
     flex-direction: column;
+
+    gap: 10px;
 }
 
-.menuButton {
+button {
     text-align: right;
+    padding: 10px 30px 10px 50px;
+    font-size: 20px;
+
+    border-radius: 20px;
+    background-color:#F0E7D6;
+    color:#2d3520;
+    border-width:0px;
+    border-bottom-width: 4px;
+    border-bottom-color: #d7dbc9;
+}
+
+.menuButton:hover {
+    background-color: #e4d4bc;
+    /* margin + border should sum to total of border w/o mouse focus so not affect position */
+    border-bottom-width: 2px;
+    margin-top: 2px;
+}
+
+.menuButton:active {
+    background-color: #e7cc9a;
+    border-bottom-width: 0px;
+    margin-top:4px;
 }
 
 .socialButtons {
     display: flex;
-    padding: 10px;
+    padding: 40px 10px 20px;
     /* width: 200px; */
     /* justify-content: space-between; */
     gap: 10px;
@@ -56,12 +96,13 @@ body {
 
 /* Right side of screen */
 .portfolio {
-    flex-grow: 3;
+    flex-grow: 4;
 
     padding: 50px;
 
     /* display: flex; */
-    background-color: #97b1ff;
+    background-color: #F0E7D6;
+    color: #9BAB80;
 }
 
 /* :nth-child(even) {
