@@ -24,6 +24,9 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/ico/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/ico/favicon-16x16.png">
     <link rel="manifest" href="/ico/site.webmanifest">
+
+    <!-- iphoneX notch -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"> 
   </head>
   <body>
     <div class = 'splitContainter'>
@@ -57,13 +60,13 @@
           <h1> Artwork </h1>
           <hr class = 'hDividerBrown'>
           <div id = 'art' class = 'imgContainer'>
-            <div class = 'imgCol'>
+            <div class = 'imgCol' id='col1'>
               <img class='imgThumb' src='assets/hopeDreams.png' onclick="focusThis(this)">
               <img class='imgThumb' src='assets/deerMe.jpg'  onclick="focusThis(this)">
               <img class='imgThumb' src='assets/memories.jpg'  onclick='focusThis(this)'>
               <img class='imgThumb' src='assets/teleTubbies.jpg'  onclick='focusThis(this)'>
             </div>
-            <div class = 'imgCol'>
+            <div class = 'imgCol' id='col2'>
               <img class='imgThumb' src='assets/adachuk_qintina.png' onclick="focusThis(this)">
               <img class='imgThumb' src='assets/acrossStyx.JPG' onclick="focusThis(this)">
               <img class='imgThumb' src='assets/bigFish.png' onclick="focusThis(this)">
@@ -134,7 +137,7 @@
                   <img src='games/CatAddiction1.gif' style='max-width:100%;max-height:300px;margin:0px;'>
                 </a>
                 <h3 style='margin:auto'>Cat Addiction</h3>
-                <p style='width:100%;margin:auto'>The more you play, the more your addicated... A Cookie Clicker style game the explores what it means
+                <p style='width:100%;margin:auto'>The more you play, the more you're addicated... A Cookie Clicker style game that explores what it means
                   to be addicted to clicking.
                 </p>
               </div>
@@ -178,7 +181,13 @@
 
     <div class='overlay' id='overlayImg'>
       <div class='imgCol' style='width:100%;height:100%;' onclick="hideOverlay()">
-           <img id='focusImg' src='' style='max-width:90%;max-height:95vh;padding:0px;margin: auto;'>
-    </div>
+           <img id='focusImg' src='' style='max-width:90%;max-height:90vh;padding:0px;margin: auto;'>
+      </div>
+      <div class='rowContainer' style='justify-content: space-between;position: fixed;bottom:10px;width: 100%;padding:0px;'>
+        <button onclick="prevImg()" class='arrow' id='focusButton' style='font-size: 50px;color:#F0E7D6;background-color:transparent;border:0px;padding:0px;margin-left: 50px;'>
+          &nbsp;&nbsp;&nbsp;&lt;&nbsp;&nbsp;&nbsp;</button>
+        <button onclick="nextImg()"  class='arrow' id='focusButton' style='font-size: 50px;color:#F0E7D6;background-color:transparent;border:0px;padding:0px;margin-right: 50px;'>
+          &nbsp;&nbsp;&nbsp;&gt;&nbsp;&nbsp;&nbsp;</button>
+      </div>
   </body>
 </html>
