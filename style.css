@@ -5,12 +5,14 @@
 
 body {
     margin: 0;
-
+    /* In case custom font not supported, fall back to Arial */
+    font-family: Arial, Helvetica, sans-serif; 
     font-family: Stanberry;
 }
 
 .overlay {
-    background-color: #9BAB80;
+    /* background-color: #9BAB80; */
+    background-color: #F0E7D6;
     position: fixed;
     z-index: 20;
 
@@ -102,6 +104,8 @@ button {
 
     border-radius: 20px;
     background-color:#F0E7D6;
+    /* Fallback font if custom one fails */
+    font-family: Arial, Helvetica, sans-serif;
     font-family: Stanberry;
     color:#2d3520;
     border-width:0px;
