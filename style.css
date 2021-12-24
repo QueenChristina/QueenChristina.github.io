@@ -9,6 +9,18 @@ body {
     font-family: Stanberry;
 }
 
+.overlay {
+    background-color: #9BAB80;
+    position: fixed;
+    z-index: 20;
+
+    padding:0px;
+    margin:0px;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
 .splitContainter {
     /* To display menu and portfolio in row as parent container */
     display: flex;
@@ -159,6 +171,10 @@ button {
     margin: auto;
 }
 
+h3 {
+    padding: 15px 0px 10px;
+}
+
 img {
     margin: 20px;
 }
@@ -173,12 +189,26 @@ p {
     color:#1e2413;
 }
 
+.rowTweets {
+    display:flex;flex-direction: row;width:100%;gap:40px;
+}
+
+#animContainer {
+    max-width: 70%;
+}
+
 @media only screen and (max-width: 1240px) {
     .name {
         font-size: 32px;
     }
     .hDivider {
         width: 200px;
+    }
+    .rowTweets {
+        flex-direction: column;
+    }
+    #animContainer {
+        max-width: 100%;
     }
 }
 
@@ -190,6 +220,7 @@ p {
         flex-direction: row;
         width: 100%;
         margin: 5px;
+        margin-bottom: 20px;
     }
     .imgContainer, #gameContainer {
         flex-direction: column;

@@ -42,17 +42,18 @@
           <hr class = 'hDividerBrown'>
           <div id = 'art' class = 'imgContainer'>
             <div class = 'imgCol'>
-              <img class='imgThumb' src='assets/hopeDreams.png'>
-              <img class='imgThumb' src='assets/deerMe.jpg'>
-              <img class='imgThumb' src='assets/memories.jpg'>
-              <img class='imgThumb' src='assets/teleTubbies.jpg'>
+              <img class='imgThumb' src='assets/hopeDreams.png' onclick="focusThis(this)">
+              <img class='imgThumb' src='assets/deerMe.jpg'  onclick="focusThis(this)">
+              <img class='imgThumb' src='assets/memories.jpg'  onclick='focusThis(this)'>
+              <img class='imgThumb' src='assets/teleTubbies.jpg'  onclick='focusThis(this)'>
             </div>
             <div class = 'imgCol'>
-              <img class='imgThumb' src='assets/adachuk_qintina.png'>
-              <img class='imgThumb' src='assets/acrossStyx.JPG'>
-              <img class='imgThumb' src='assets/bigFish.png'>
-              <img class='imgThumb' src='assets/hopeBirdLight.png' id='Hope is the Little Bird that Keeps the Nightmares Away'>
-              <img class='imgThumb' src='assets/bannerInnovate.png'>
+              <img class='imgThumb' src='assets/adachuk_qintina.png' onclick="focusThis(this)">
+              <img class='imgThumb' src='assets/acrossStyx.JPG' onclick="focusThis(this)">
+              <img class='imgThumb' src='assets/bigFish.png' onclick="focusThis(this)">
+              <img class='imgThumb' src='assets/hopeBirdLight.png' onclick="focusThis(this)">
+              <!-- 'Hope is the Little Bird that Keeps the Nightmares Away' TODO: name-->
+              <img class='imgThumb' src='assets/bannerInnovate.png' onclick="focusThis(this)">
             </div>
           </div>
         </div> 
@@ -60,13 +61,13 @@
       <div id = 'animation'>
         <h1>Animation and Storytelling</h1>
         <hr class = 'hDividerBrown'>
-        <div class = 'imgCol'>
-          <img class='imgThumb' src='anim/WarmerWithFriends.png'>
+        <div class = 'imgCol' style='margin:auto;' id='animContainer' onclick="focusThis(this)">
+          <img class='imgThumb' src='anim/warmerWithFriends.jpg'>
           <video src="anim/Dreams MV.mp4" controls></video>
           <video src="anim/Afraid Im Not the Deer I Want to Be.mp4" controls></video>
           <video src="anim/fallingAsleep.mp4" controls loop></video>
           <video src="anim/Blinded by a Thousand Cranes.mp4" controls loop></video>
-          <img class='imgThumb' src='anim/TrenchcoatPenguinComic.png'>
+          <img class='imgThumb' src='anim/trenchcoatPenguin.jpg' onclick="focusThis(this)">
         </div>
       </div>
 
@@ -89,12 +90,12 @@
           <!-- Twitter reviews -->
           <div class='imgCol' style='width:100%;'>
             <div class='center'>
-            <div style='display:flex;flex-direction: row;width:100%;gap:40px;'>
+            <div class='rowTweets'>
               <div>
-              <blockquote class="twitter-tweet twitter-tweet" data-theme="light" width='400px'><p lang="en" dir="ltr">Started creating a game 3-months ago to improve my coding skills. Follow at <a href="https://twitter.com/som_game_studio?ref_src=twsrc%5Etfw" target="_blank">@som_game_studio</a> &amp; DM to test! Thank you to the following for making this prototype possible:<a href="https://twitter.com/noname_pianist?ref_src=twsrc%5Etfw">@noname_pianist</a> <a href="https://twitter.com/SelieltheShaper?ref_src=twsrc%5Etfw">@SelieltheShaper</a> <a href="https://twitter.com/QuailTina?ref_src=twsrc%5Etfw">@QuailTina</a> <a href="https://twitter.com/Detrimonious?ref_src=twsrc%5Etfw">@Detrimonious</a> <a href="https://twitter.com/JoeCreates?ref_src=twsrc%5Etfw">@JoeCreates</a> <a href="https://twitter.com/hashtag/screenshotsaturday?src=hash&amp;ref_src=twsrc%5Etfw">#screenshotsaturday</a> <a href="https://twitter.com/hashtag/madewithgodot?src=hash&amp;ref_src=twsrc%5Etfw">#madewithgodot</a> <a href="https://t.co/TFciVDXHbG">pic.twitter.com/TFciVDXHbG</a></p>&mdash; Albert K🌹 (@albertkun) <a href="https://twitter.com/albertkun/status/1469730668422647809?ref_src=twsrc%5Etfw">December 11, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+              <blockquote class="twitter-tweet twitter-tweet" data-theme="light" width='350px'><p lang="en" dir="ltr">Started creating a game 3-months ago to improve my coding skills. Follow at <a href="https://twitter.com/som_game_studio?ref_src=twsrc%5Etfw" target="_blank">@som_game_studio</a> &amp; DM to test! Thank you to the following for making this prototype possible:<a href="https://twitter.com/noname_pianist?ref_src=twsrc%5Etfw">@noname_pianist</a> <a href="https://twitter.com/SelieltheShaper?ref_src=twsrc%5Etfw">@SelieltheShaper</a> <a href="https://twitter.com/QuailTina?ref_src=twsrc%5Etfw">@QuailTina</a> <a href="https://twitter.com/Detrimonious?ref_src=twsrc%5Etfw">@Detrimonious</a> <a href="https://twitter.com/JoeCreates?ref_src=twsrc%5Etfw">@JoeCreates</a> <a href="https://twitter.com/hashtag/screenshotsaturday?src=hash&amp;ref_src=twsrc%5Etfw">#screenshotsaturday</a> <a href="https://twitter.com/hashtag/madewithgodot?src=hash&amp;ref_src=twsrc%5Etfw">#madewithgodot</a> <a href="https://t.co/TFciVDXHbG">pic.twitter.com/TFciVDXHbG</a></p>&mdash; Albert K🌹 (@albertkun) <a href="https://twitter.com/albertkun/status/1469730668422647809?ref_src=twsrc%5Etfw">December 11, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
               </div>
               <div>
-              <blockquote class="twitter-tweet twitter-tweet" data-theme="light" width='400px'><p lang="en" dir="ltr"><a href="https://twitter.com/QuailTina?ref_src=twsrc%5Etfw" target="_blank">@QuailTina</a> Heya! I just wanted to pop in and say, holy moly, thank you so much for your dialogue system up on gitHub. The way you&#39;ve structured it and kept it intact as a project, complete with annotations.. I have learned SO MUCH just from looking at it and recreating function!</p>&mdash; Vincent, but Seasonally Jolly (@Chiligoat) <a href="https://twitter.com/Chiligoat/status/1454462369132945409?ref_src=twsrc%5Etfw">October 30, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+              <blockquote class="twitter-tweet twitter-tweet" data-theme="light" width='350px'><p lang="en" dir="ltr"><a href="https://twitter.com/QuailTina?ref_src=twsrc%5Etfw" target="_blank">@QuailTina</a> Heya! I just wanted to pop in and say, holy moly, thank you so much for your dialogue system up on gitHub. The way you&#39;ve structured it and kept it intact as a project, complete with annotations.. I have learned SO MUCH just from looking at it and recreating function!</p>&mdash; Vincent, but Seasonally Jolly (@Chiligoat) <a href="https://twitter.com/Chiligoat/status/1454462369132945409?ref_src=twsrc%5Etfw">October 30, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
               </div>
             </div>
             </div>
@@ -103,19 +104,49 @@
           <h2> Games </h2>
           <p>Made with Godot and Pygame.</p>
           <div class='imgCol' style='width:100%;'> 
-            <a href='https://qintin.itch.io/calculus-zombies' target="_blank">
-              <img src='games/cover2.png' style='display: block;margin: auto;max-width:100%;max-height:300px;'>
-            </a>
+            <div class='imgCol' style='width:100%;'>
+              <a href='https://qintin.itch.io/calculus-zombies' target="_blank">
+                <img src='games/cover2.png' style='display: block;margin: auto;max-width:100%;max-height:300px;'>
+              </a>
+              <h3 style='margin:auto;'>Calculus Zombies</h3>
+              <p style='margin:auto'>Educational game to learn derivatives, integrals, and calculus concepts, while protecting your smart brain.</p>
+            </div>
 
-            <div class='rowContainer center' id='gameContainer'>
-              <a href='https://github.com/QueenChristina/cat-addiction' target="_blank">
-                <img src='games/CatAddiction1.gif' style='max-width:100%;max-height:300px'>
-              </a>
-              <a href='https://github.com/QueenChristina/Neverending-Dream-RPG-in-Python' target="_blank">
-                <img src='games/GamePreview1.gif' style='max-width:90%;max-height:300px'>
-              </a>
+            <div class='rowContainer' id='gameContainer' style='margin:auto'>
+              <div class='imgCol' style='width:100%;'>
+                <a href='https://github.com/QueenChristina/cat-addiction' target="_blank"  style='margin:auto'>
+                  <img src='games/CatAddiction1.gif' style='max-width:100%;max-height:300px;margin:0px;'>
+                </a>
+                <h3 style='margin:auto'>Cat Addiction</h3>
+                <p style='width:100%;margin:auto'>The more you play, the more your addicated... A Cookie Clicker style game the explores what it means
+                  to be addicted to clicking.
+                </p>
+              </div>
+              
+              <div class='imgCol' style='width:100%;'>
+                <a href='https://github.com/QueenChristina/Neverending-Dream-RPG-in-Python' target="_blank">
+                  <img src='games/GamePreview1.gif' style='max-width:90%;max-height:300px;margin:0px;'>
+                </a>
+                <h3 style='margin:auto'>Neverending Dream</h3>
+                <p style='width:100%;margin:auto'>Fantastical RPG with strange creatures in a dream-like world.</p>
+             </div>
             </div> 
           </div>
+
+          <!-- More -->
+          <h2> Tools </h2>
+          <div class='imgCol' style='width:100%;'>
+            <div class='rowContainer center' style='padding: 0px;'>
+              <div class='imgCol' style='width:100%;'>
+              <a href='https://github.com/QueenChristina/image_grapher' target="_blank">
+                <img src='games/imageGrapher.jpg' style='max-width:90%;max-height:300px'>
+              </a>
+              <h3 style='margin:0px;padding:0px;margin:auto'>Image Grapher</h3>
+              <p style='margin:auto'>Graph images in the pattern of mathematical functions.</p>
+            </div>
+            </div>
+          </div>
+
         <!-- end games/tools page -->
         </div>
 
@@ -127,6 +158,11 @@
       <!-- portfolio -->
       </div> 
       <!-- all content -->
+    </div>
+
+    <div class='overlay' id='overlayImg'>
+      <div class='imgCol' style='width:100%;height:100%;'>
+           <img id='focusImg' src='' style='max-width:90%;max-height:90vh;padding:0px;margin: auto;' onclick="hideOverlay()">
     </div>
   </body>
 </html>
