@@ -8,11 +8,13 @@ body {
     /* In case custom font not supported, fall back to Arial */
     font-family: Arial, Helvetica, sans-serif; 
     font-family: Stanberry;
+    font-family: 'Pangolin', cursive;
 }
 
 .overlay {
     /* background-color: #9BAB80; */
-    background-color: #F0E7D6;
+    /* background-color: #F0E7D6; */
+    background-color: black;
     position: fixed;
     z-index: 20;
 
@@ -107,6 +109,7 @@ button {
     /* Fallback font if custom one fails */
     font-family: Arial, Helvetica, sans-serif;
     font-family: Stanberry;
+    font-family: 'Pangolin', cursive;
     color:#2d3520;
     border-width:0px;
     border-bottom-width: 4px;
