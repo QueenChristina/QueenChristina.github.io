@@ -35,7 +35,7 @@
   <body>
     <div class = 'splitContainter'>
       <div class = 'menu'>
-            <h1 class = 'name'>Christina Qin</h1>
+            <h1 class = 'name'  onclick="show('about')">Christina Qin</h1>
             <hr class = 'hDivider'>
 
             <div class = 'menuButtons'>
@@ -45,12 +45,16 @@
             </div>
 
             <div class = 'rowContainer' id='socialButtons' style="gap:25px;">
+              <a title='linkedin' href='https://www.linkedin.com/in/tina-qin-0/' target="_blank">
+                <img width="30" style='margin:0px;'alt="linkedin" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Cib-linkedin_%28CoreUI_Icons_v1.0.0%29.svg/32px-Cib-linkedin_%28CoreUI_Icons_v1.0.0%29.svg.png">
+              </a>
               <a title="github" href="https://github.com/QueenChristina" target="_blank">
                 <img width="30" style='margin:0px;'alt="github" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/512px-Octicons-mark-github.svg.png">
               </a>
               <a title="twitter" href="https://twitter.com/QuailTina/media" target="_blank">
-                <img width="30" style='margin:0px;' alt="Twitter font awesome" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Twitter_font_awesome.svg/512px-Twitter_font_awesome.svg.png">
+                <img width="30" style='margin:0px;' alt="Twitter" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Twitter_font_awesome.svg/512px-Twitter_font_awesome.svg.png">
               </a>
+              <!-- Font Awesome -->
               <a title='itchio' href='https://qintin.itch.io/' target="_blank">
                 <img width="30" style='margin:0px;'alt="itchio" src="https://static.itch.io/images/itchio-textless-black.svg">
               </a>
@@ -58,6 +62,15 @@
       </div>
 
       <div class = 'portfolio' id='content'>
+        <!-- About me page -->
+        <div id = 'about' style='padding-bottom: 20px;'>
+          <h1> About </h1>
+          <hr class = 'hDividerBrown'>
+          <p> Hi there, I'm Christina!
+              I'm a software developer and artist at Stanford University majoring in computer science.
+              I tell stories through human computer interactions -- whether it be developing websites, designing games, or making animation. 
+           </p>
+        </div>
 
         <!-- Art page -->
         <div id = 'art' style='padding-bottom: 40px;'>

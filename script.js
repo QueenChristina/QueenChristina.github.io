@@ -3,7 +3,7 @@ var focusedImg = null;
 function show(page) {
     // Switches to the page indicated by pressing menu button
     // Assert page should be an id here
-    let allPageIds = ['art', 'animation', 'games/tools'];
+    let allPageIds = ['about', 'art', 'animation', 'games/tools'];
     
     for (const id of allPageIds) {
         document.getElementById(id).style.display = 'none';
